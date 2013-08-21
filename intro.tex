@@ -1,0 +1,39 @@
+\documentclass{article}
+\begin{document}
+\title{Introduction - How to Prove It : Answers to exercises}
+\author{Scott Brown}
+\maketitle
+1.(a.) Factor $2^15 - 1 = 32,767$ into two smaller positive integers\\
+       7, 4681\\
+  (b.) Find an integer x such that $1 < x < 2^{32767} - 1$ and $2^{32767} - 1$ is divisible by x.\\
+127 i.e. $2^7 - 1$.\\
+\linebreak
+2. \begin{tabular}{c|c|c|c}
+$n$&Is n prime?&$3^n - 1$&Is $3^n - 1$ prime?\\
+\hline
+2&Y&8&N\\
+3&Y&26&N\\
+4&N&80&N\\
+5&Y&242&N\\
+6&N&728&N\\
+7&Y&2186&N\\
+8&N&6560&N\\
+9&N&19682&N\\
+10&N&59048&N\\
+\end{tabular}
+Based on the values of the table I conjecture that $3^n - 1$ is always even, and so is never prime.\\
+\linebreak
+3. Euclid's theorem\\
+(a.) Find a prime different from 2,3,5 and 7.\\
+   $Let m = 2 * 3 * 5 * 7 + 1 = 211$\\
+   $211$ is prime
+(b.) Find a prime different from 2,5 and 11.\\
+     Let m $ = 2 * 5 * 11 + 1 = 111$\\
+     $ 111$ has the factor 3, which is different to the primes above.\\
+\linebreak
+4. Find five consecutive integers that are not prime.\\
+Let $n = 5$ and let $x = (n + 1)! + 2 = 722$\\
+722,723,724,725 and 726 are not prime.\\
+727 is prime.\\
+\linebreak
+\end{document}

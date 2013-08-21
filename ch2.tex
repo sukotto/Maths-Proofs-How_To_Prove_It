@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\begin{document}
+\title{Quantificational Logic}
+\author{Scott Brown}
+\maketitle
+\section*{2.1. Quantifiers}
+1. Analyse the logical forms of these statements.\\
+(a)Anyone who has forgiven at least one person is a saint.\\
+$\forall x(\exists y Forgives(x,y) \Rightarrow Saint(x) $\\
+(b)Nobody in the calculus class is smarter than everybody in the discrete maths class.\\
+$\neg \exists x \in calculus class (\forall y \in discrete maths class, smarter(x,y)$\\
+(c)Everyone likes Mary, except Mary herself.\\
+$\forall x, x \not = Mary \Rightarrow likes(x, Mary)$\\
+(d) Jane saw a police officer, and Roger saw one too.\\
+$\exists a,b \in \{Police\} \wedge saw(Jane,a) \wedge saw(Roger,b)$\\
+(e) Jane saw a police officer, and Roger saw him too.\\
+$\exists p \in \{Police\} \wedge saw(Jane,p) \wedge saw(Roger, p)$\\
+\newline
+4. Translate the following statements into idiomatic English.\\
+(a)$\forall x[(H(x) \wedge \neg \exists M(x,y)) \Rightarrow U(x)$\\
+All unmarried men are unhappy.\\
+(b)$\exists z(P(z,x) \wedge S(z,y) \wedge W(y))$\\
+There is a parent who has a sister.\\
+\newline
+7. Are these statements true or false? The universe of discourse is $\mathbb{N}$.\\
+(a)$\forall x \exists y(2x - y = 0)$ True\\
+(b)$\exists y \forall x(2x - y = 0)$ False, because there is no one number which can be subtracted from 2 times all natural numbers to equal zero.\\
+(c)$\forall x \exists y (x - 2y = 0)$ False, because the statement fails for $x = 1$\\
+(d)$\forall x(x < 10 \Rightarrow \forall y(y < x \Rightarrow y < 9))$ True\\
+(e)$\exists y \exists z(y + z = 100)$ True (e.g. $y = 1$ and $z = 99$)\\
+(f)$\forall x \exists y(y > x \wedge \exists z(y + z = 100))$ False, because it is untrue for all cases where $x >= 99$.\\
+\section*{Equivalences Involving Quantifiers}
+1.Negate these statements and then reexpress the results as equivalent positive statements.\\
+(a) Everyone who is majoring in maths has a friend who needs help with his homework.\\
+$\neg \forall x(M(x) \wedge F(x,y) \Rightarrow H(y)$\\
+$\exists x(M(x) \wedge F(x,y) \Rightarrow \neg H(y)$\\
+(b)Everyone has a roommate who dislikes everyone.\\
+$\neg \forall x(R(x,y) \wedge \forall(x)D(y,x))$\\
+$\exists x (R(x,y) \wedge \exists x \neg D(y,x)$\\
+(c) $A \cup B \subseteq C \setminus D$\\
+$\exists x(x \in A \vee x \in B) \wedge (x \not \in C \vee x \in D) $\\
+(d) $\exists x \forall y[y > x \Rightarrow \exists z(z^2 + 5z = y)]$\\
+$\neg \exists x \forall y[y > x \Rightarrow \exists z(z^2 + 5z = y)]$\\
+$\forall x \forall y[y > x \Rightarrow \neg\exists z(z^2 + 5z = y)]$
+\end{document}
