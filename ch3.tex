@@ -1,0 +1,48 @@
+\documentclass{article}
+\begin{document}
+\title{Chapter 3 - Proofs}
+\author{Scott Brown}
+\maketitle
+\section*{3.1. Proof Strategies}
+1. \textbf{Theorem.} \textit{Suppose n is an integer larger than 1 and n is not prime. Then $2^n - 1$ is not prime.}\\
+(a) Hypotheses: \\
+ n is an integer larger than 1\\
+n is not prime\\
+ Conclusion:\\
+  $2^n - 1$ is not prime\\
+  When $n = 6$ both the hypotheses are true, because $6 > 1$ and $6$ is not prime ($2*3=6$).\\ The theorem says that $2^6-1$ is not prime, and this is correct since 
+  $2^6-1=63$ and $63$ is not prime ($9*7=63$).\\
+  \linebreak
+  (b) For the case $n = 15$, $n > 1$ and $n$ is not prime ($15 = 3*5$), so the hypotheses are true. The conclusion is also true because $2^{15}-1 = 32767$ and $32767$ is not prime ($32767 = 151 * 31 * 7$).\\
+  \linebreak
+  (c) For the case $n = 1$, $11 > 1$ and $11$ is prime. Because one of the hypotheses is false, nothing can be concluded from the theorem in this case.\\
+  \linebreak
+ 2. \textbf{Theorem.} \textit{Suppose that $b^2 > 4ac$. Then the quadratic equation $ax^2 + bx + c = 0$ has exactly two real solutions.}\\
+ (a) Hypothesis: $b^2 > 4ac$
+     Conclusion: The quadratic equation $ax^2 + bx + c =0$ has exactly two real solutions.\\
+     \linebreak
+ (b) To give an instance of the theorem, values of a,b and c must be specified, but not x. This is because the values of a, b and c must be known to decide if the hypothesis is true. The value of x is unspecified because the theorem applies to all possible values of x.\\
+ \linebreak
+ (c)$a=2, b=5, c=3$\\
+ $5^2 > 4 * 2 * 3 \equiv 25 > 24$ which is true, so the hypothesis holds. \\
+ $2x^2 + 5x + 3 = 0$\\
+ $2 * 3 = 6$\\
+ $2 + 3 = 5$\\
+ $2x^2 + 2x + 3x + 3$\\
+ $2x(x + 1) + 3 (x + 1)$\\
+ $(2x + 3)(x + 1) = 0$\\
+ $x = -1$ or $x = -3/2$ so there are exactly two real solutions.\\ 
+ The conclusion is correct.\\
+ \linebreak
+ (d)$a = 2, b = 4, c = 3$\\
+ $4^2 > 4 * 2 * 3 \equiv 16 > 24$ which is false. Since the hypothesis is false, nothing can be concluded from the theorem in this case.\\
+ \linebreak
+ 3. \textbf{Incorrect Theorem.} \textit{Suppose n is a natural number larger than 2, and n is not a prime number. Then $2n + 13$ is not a prime number. }\\
+ Hypotheses: n is a natural number larger than 2\\
+             n is not a prime number\\
+ Conclusion: $2n + 13$ is not a prime number\\
+ Counterexample: $n = 8$\\
+ $8 > 2$ and 8 is not prime, so the hypotheses are true.\\
+ $2 * 8 + 13 = 29$ which is prime, so the conclusion is false.\\
+ The hypotheses are true, but the conclusion is false, so the theorem is incorrect.\\
+\end{document}
